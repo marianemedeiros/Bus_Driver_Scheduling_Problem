@@ -1,0 +1,11 @@
+graph g {
+ranksep=0.2;
+overlap=scale;
+"J0" -- "6 (390-450) (T-T)" [style=dotted];
+"6 (390-450) (T-T)" -- "5 (390-450) (T-T)" [weight=1.2, len=0.5];
+"J1" -- "3 (1439-1449) (T-T)" [style=dotted];
+"J2" -- "2 (1440-1450) (T-T)" [style=dotted];
+"J3" -- "0 (1400-1460) (T-T)" [style=dotted];
+"0 (1400-1460) (T-T)" -- "1 (1400-1460) (T-T)" [weight=1.2, len=0.5];
+"1 (1460-1470) (T-T)" -- "4 (1460-1470) (T-T)" [weight=1.2, len=0.5];
+}

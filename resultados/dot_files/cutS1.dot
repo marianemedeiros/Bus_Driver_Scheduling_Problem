@@ -1,0 +1,13 @@
+graph g {
+ranksep=0.2;
+overlap=scale;
+"J0" -- "192 (330-385) (G-T)" [style=dotted];
+"J1" -- "99 (330-380) (G-T)" [style=dotted];
+"J2" -- "32 (325-370) (G-T)" [style=dotted];
+"J3" -- "115 (320-330) (G-T)" [style=dotted];
+"115 (320-330) (G-T)" -- "46 (330-390) (T-T)" [weight=1.2, len=0.5];
+"J4" -- "134 (315-330) (G-T)" [style=dotted];
+"134 (315-330) (G-T)" -- "116 (330-420) (T-T)" [weight=1.2, len=0.5];
+"J5" -- "45 (280-330) (G-T)" [style=dotted];
+"45 (280-330) (G-T)" -- "135 (330-390) (T-T)" [weight=1.2, len=0.5];
+}

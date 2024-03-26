@@ -1,0 +1,9 @@
+graph g {
+ranksep=0.2;
+overlap=scale;
+"J0" -- "0 (365-395) (G-T)" [style=dotted];
+"0 (365-395) (G-T)" -- "1 (400-440) (T-T)" [weight=1.2, len=0.5];
+"1 (400-440) (T-T)" -- "2 (440-480) (T-T)" [weight=1.2, len=0.5];
+"J1" -- "4 (430-470) (T-T)" [style=dotted];
+"J2" -- "5 (1410-1510) (T-T)" [style=dotted];
+}

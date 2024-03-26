@@ -1,0 +1,40 @@
+README
+
+This code is part of my master's degree research, more info can be found at the [university repositiory](http://repositorio.uem.br:8080/jspui/handle/1/5426)
+
+This algorithm proposes to optimize a driver schedule, the goal is to minimize the pay cost.
+We have 11 instances of test cases, which can be found in the instances directory.
+
+The implemented metaheuristic is Variable Neighborhood Search (VNS). We implemented 2 different VNS, a parallel version and a sequential one.
+
+To run this code, you need:
+1. gcc (version 5.2 or more)
+2. gprof
+3. perf
+
+Everything is obtained by the terminal, and the tests done were all on the Linux platform.
+
+We have some flags that are needed to run:
+1. -a: the algorithm that will be executed (gvns, vns_p1), by default is vns_p1.
+2. -f: instance to be read.
+3. -i: iteration (1 ... 30), this is used only when we run many iterations of the algorithm.
+4. -o: how many operators will be executed, by default this is 36.
+5. -l: local search used to sequential VNS (1: vnd; 2: local_search_1; 3: local_search_2);
+
+To run:
+1. open a terminal window
+2. go to the directory of the code make
+3. ./main -f V_TCCC130 -a vns_p1
+
+For example, the command **./main -f V_TCCC130 -a vns_p1**, will execute the instance with 130 tasks and will use the vns_p1 algorithm.
+
+If you want to run, all instances, can use the shell script "run-all-instances.sh". This script was made to run 30
+iterations of each instance. To run this you need sudo privileges on your system:
+
+1. sudo ./run-all-instances vns_p1
+
+If you want to execute the sequential VNS:
+
+1. sudo ./run-all-instances gvns 3
+
+The number 3, can change if you want one of the other local searches (1 or 2).
